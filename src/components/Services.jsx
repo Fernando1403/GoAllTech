@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 import { TerminalWindow, CloudArrowUp, ShieldCheck, Database, LightbulbFilament, ArrowRight } from '@phosphor-icons/react';
 
 const services = [
@@ -45,7 +46,7 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
+  visible: {
     opacity: 1, y: 0,
     transition: { type: "spring", stiffness: 100, damping: 20 }
   }
@@ -64,12 +65,15 @@ export function Services() {
               Fornecemos o arcabouço tecnológico e inteligência artificial necessários para que sua corporação alcance novos patamares de eficiência e inovação.
             </p>
           </div>
-          <button className="hidden md:flex items-center gap-2 text-brand-cyan font-medium border-b border-transparent hover:border-brand-cyan transition-all pb-1 whitespace-nowrap">
+          <Link
+            to="/servicos"
+            className="hidden md:flex items-center gap-2 text-brand-cyan font-medium border-b border-transparent hover:border-brand-cyan transition-all pb-1 whitespace-nowrap"
+          >
             Ver todos os serviços <ArrowRight size={16} />
-          </button>
+          </Link>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -77,7 +81,7 @@ export function Services() {
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {services.map((svc, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               variants={itemVariants}
               className={`p-10 rounded-[2rem] bg-brand-panel border border-white/5 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-brand-cyan/20 transition-colors group flex flex-col justify-between min-h-[300px] ${svc.colSpan}`}

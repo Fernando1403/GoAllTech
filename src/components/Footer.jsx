@@ -2,17 +2,20 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { GithubLogo, LinkedinLogo, TwitterLogo } from '@phosphor-icons/react';
 
-const tabs = ['Serviços', 'Parceiros', 'Produtos', 'Indústrias', 'Imprensa', 'Depoimentos', 'Casos de Uso', 'Sobre', 'Blog', 'CEO'];
+const tabs = [
+  { name: 'Serviços', path: '/servicos' },
+  { name: 'Parceiros', path: '/parceiros' },
+  { name: 'Produtos', path: '/produtos' },
+  { name: 'Indústrias', path: '/industrias' },
+  { name: 'Imprensa', path: '/imprensa' },
+  { name: 'Depoimentos', path: '/depoimentos' },
+  { name: 'Casos de Uso', path: '/casos-de-uso' },
+  { name: 'Sobre', path: '/sobre' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'CEO', path: '/ceo' }
+];
 
 export function Footer() {
-  const location = useLocation();
-  const isHome = location.pathname === '/';
-
-  const getLink = (tab) => {
-    const slug = tab.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
-    return isHome ? `#${slug}` : `/#${slug}`;
-  };
-
   return (
     <footer className="bg-brand-dark border-t border-white/5 pt-24 pb-12">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
@@ -41,19 +44,19 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-semibold">Empresa</h4>
             {tabs.slice(0, 4).map(t => (
-              <a key={t} href={getLink(t)} className="text-gray-400 hover:text-brand-cyan transition-colors">{t}</a>
+              <Link key={t.name} to={t.path} className="text-gray-400 hover:text-brand-cyan transition-colors">{t.name}</Link>
             ))}
           </div>
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-semibold">Institucional</h4>
             {tabs.slice(4, 7).map(t => (
-              <a key={t} href={getLink(t)} className="text-gray-400 hover:text-brand-cyan transition-colors">{t}</a>
+              <Link key={t.name} to={t.path} className="text-gray-400 hover:text-brand-cyan transition-colors">{t.name}</Link>
             ))}
           </div>
           <div className="flex flex-col gap-4">
             <h4 className="text-white font-semibold">Insights</h4>
             {tabs.slice(7).map(t => (
-              <a key={t} href={getLink(t)} className="text-gray-400 hover:text-brand-cyan transition-colors">{t}</a>
+              <Link key={t.name} to={t.path} className="text-gray-400 hover:text-brand-cyan transition-colors">{t.name}</Link>
             ))}
           </div>
         </div>

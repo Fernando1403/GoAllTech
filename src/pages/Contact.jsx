@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Envelope, Phone, MapPin, PaperPlaneTilt, CheckCircle } from '@phosphor-icons/react';
+import { Envelope, Phone, MapPin } from '@phosphor-icons/react';
+import { ContactForm } from '../components/ContactForm';
 
 export function Contact() {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    // In a real app, you'd send the form data here.
-  };
-
   return (
     <section className="pt-32 pb-24 min-h-screen relative overflow-hidden bg-brand-dark">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
@@ -72,83 +65,7 @@ export function Contact() {
             transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
             className="glass-panel p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden"
           >
-            {submitted ? (
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="flex flex-col items-center justify-center text-center py-20"
-              >
-                <div className="p-4 bg-brand-cyan/20 text-brand-cyan rounded-full mb-6">
-                  <CheckCircle size={64} weight="fill" />
-                </div>
-                <h2 className="text-3xl font-bold text-white mb-4">Mensagem Enviada!</h2>
-                <p className="text-gray-400 max-w-[250px]">Obrigado por entrar em contato. Retornaremos em breve.</p>
-                <button 
-                  onClick={() => setSubmitted(false)}
-                  className="mt-8 text-brand-cyan font-medium underline underline-offset-4"
-                >
-                  Enviar nova mensagem
-                </button>
-              </motion.div>
-            ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="text-sm font-medium text-gray-300 ml-1">Seu melhor E-mail</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    required 
-                    className="w-full bg-brand-dark border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 focus:border-brand-cyan/50 transition-all placeholder:text-gray-600"
-                    placeholder="email@corporativo.com.br"
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="phone" className="text-sm font-medium text-gray-300 ml-1">Telefone / WhatsApp</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    required 
-                    className="w-full bg-brand-dark border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 focus:border-brand-cyan/50 transition-all placeholder:text-gray-600"
-                    placeholder="+55 (11) 99999-9999"
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="reason" className="text-sm font-medium text-gray-300 ml-1">Motivo do Contato</label>
-                  <select 
-                    id="reason" 
-                    required
-                    className="w-full bg-brand-dark border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 focus:border-brand-cyan/50 transition-all appearance-none cursor-pointer"
-                  >
-                    <option value="" disabled selected>Selecione um assunto</option>
-                    <option value="software">Engenharia de Software</option>
-                    <option value="ai">Desenvolvimento de IA</option>
-                    <option value="cloud">Cloud & DevOps</option>
-                    <option value="cyber">Cyber Security</option>
-                    <option value="other">Outros assuntos</option>
-                  </select>
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="message" className="text-sm font-medium text-gray-300 ml-1">Conte um pouco mais (opcional)</label>
-                  <textarea 
-                    id="message" 
-                    rows="4" 
-                    className="w-full bg-brand-dark border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-brand-cyan/20 focus:border-brand-cyan/50 transition-all placeholder:text-gray-600 resize-none"
-                    placeholder="Quais são os seus principais objetivos técnicos?"
-                  ></textarea>
-                </div>
-
-                <button 
-                  type="submit" 
-                  className="flex items-center justify-center gap-2 px-8 py-4 bg-brand-cyan text-brand-dark font-bold rounded-xl mt-4 hover:scale-[1.02] active:scale-[0.98] transition-all"
-                >
-                  <PaperPlaneTilt size={20} weight="bold" />
-                  <span>Enviar Solicitação</span>
-                </button>
-              </form>
-            )}
+            <ContactForm />
           </motion.div>
         </div>
       </div>

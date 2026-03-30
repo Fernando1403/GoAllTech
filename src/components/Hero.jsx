@@ -31,11 +31,11 @@ export function Hero() {
             </div>
 
             <h1 className="text-5xl md:text-7xl lg:text-[5rem] font-bold tracking-tighter leading-[1.05] text-white">
-              Construindo o futuro com as <span className="text-brand-cyan">inovações</span> de hoje.
+              Excelência em <span className="text-brand-cyan">Google Cloud</span> e Estratégias Digitais.
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 max-w-[50ch] leading-relaxed">
-              Transformamos desafios complexos de TI em soluções escaláveis combinando Inteligência Artificial avançada, serviços gerenciados, e desenvolvimento customizado.
+              Consolidamos sua infraestrutura com o ecossistema Google (GCP/GWS), AWS e o poder da IA generativa com Gemini. Especialistas em DevOps e SecOps para operações críticas.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">

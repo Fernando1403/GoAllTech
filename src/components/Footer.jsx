@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { GithubLogo, LinkedinLogo, TwitterLogo } from '@phosphor-icons/react';
+import { WhatsappLogo, LinkedinLogo } from '@phosphor-icons/react';
 
 const tabs = [
   { name: 'Serviços', path: '/servicos' },
@@ -19,7 +19,7 @@ export function Footer() {
   return (
     <footer className="bg-brand-dark border-t border-white/5 pt-24 pb-12">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-        
+
         <div className="md:col-span-1">
           <Link to="/" className="text-3xl font-bold tracking-tighter text-brand-cyan mb-6 block hover:text-white transition-colors">
             GO.ALLTECH
@@ -32,10 +32,7 @@ export function Footer() {
               <LinkedinLogo size={20} weight="fill" />
             </a>
             <a href="#" className="p-2 glass-panel rounded-full text-white hover:text-brand-cyan transition-colors hover:scale-110 active:scale-95">
-              <GithubLogo size={20} weight="fill" />
-            </a>
-            <a href="#" className="p-2 glass-panel rounded-full text-white hover:text-brand-cyan transition-colors hover:scale-110 active:scale-95">
-              <TwitterLogo size={20} weight="fill" />
+              <WhatsappLogo size={20} weight="fill" />
             </a>
           </div>
         </div>
@@ -65,8 +62,8 @@ export function Footer() {
           <h4 className="text-white font-semibold mb-6">Contato Corporativo</h4>
           <p className="text-gray-400 text-sm mb-2">suporte@goalltech.com.br</p>
           <p className="text-gray-400 text-sm mb-4">+55 (11) 3333-3333</p>
-          <Link 
-            to="/contato" 
+          <Link
+            to="/contato"
             className="w-full mt-4 py-3 bg-white/5 border border-white/10 hover:border-brand-cyan/40 text-white rounded-xl transition-all font-medium hover:bg-white/10 active:scale-[0.98] flex items-center justify-center"
           >
             Fale com um Especialista

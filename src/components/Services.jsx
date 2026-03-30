@@ -6,32 +6,32 @@ import { TerminalWindow, CloudArrowUp, ShieldCheck, Database, LightbulbFilament,
 const services = [
   {
     icon: <CloudArrowUp size={32} weight="duotone" className="text-brand-cyan" />,
-    title: "Cloud Migration & DevOps",
-    desc: "Arquiteturas escaláveis e esteiras de CI/CD para modernização da infraestrutura.",
+    title: "Cloud Performance",
+    desc: "Implementação e migração (GCP/AWS) com automação via Terraform para máxima escalabilidade.",
     colSpan: "md:col-span-2"
   },
   {
     icon: <ShieldCheck size={32} weight="duotone" className="text-brand-cyan" />,
     title: "Cyber Security",
-    desc: "Governança, compliance e SOC avançado focado na proteção corporativa.",
+    desc: "Proteção multicamadas com Fortinet e serviços especializados de Pentest para resiliência total.",
     colSpan: "md:col-span-1"
   },
   {
     icon: <TerminalWindow size={32} weight="duotone" className="text-brand-cyan" />,
-    title: "Engenharia de Software",
-    desc: "Desenvolvimento customizado de alto impacto e performance.",
+    title: "Dev Specialists",
+    desc: "Desenvolvimento de aplicações especialistas e soluções sob medida com foco em performance SecOps.",
     colSpan: "md:col-span-1"
   },
   {
     icon: <Database size={32} weight="duotone" className="text-brand-cyan" />,
-    title: "Data Analytics",
-    desc: "Pipelines robustos para transformação de dados em inteligência de negócio.",
+    title: "Cloud Data",
+    desc: "Pipelines robustos para transformação de dados Google Cloud em inteligência estratégica.",
     colSpan: "md:col-span-1"
   },
   {
     icon: <LightbulbFilament size={32} weight="duotone" className="text-brand-cyan" />,
-    title: "Integração via IA",
-    desc: "Agentes LLM hiper-customizados para o ecossistema da sua empresa.",
+    title: "IA Synergy",
+    desc: "Orquestração de agentes de IA com Gemini, VEO e NanoBanana para acelerar o seu ROI.",
     colSpan: "md:col-span-1"
   }
 ];
@@ -62,7 +62,7 @@ export function Services() {
               Ecossistema completo para a sua operação.
             </h2>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              Fornecemos o arcabouço tecnológico e inteligência artificial necessários para que sua corporação alcance novos patamares de eficiência e inovação.
+              Hub de inovação especializado em ecossistemas Google Cloud e AWS, entregando o arcabouço tecnológico necessário para sua evolução digital consciente.
             </p>
           </div>
           <Link

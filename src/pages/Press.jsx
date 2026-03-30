@@ -4,18 +4,21 @@ import { PageLayout } from '../components/PageLayout';
 export function PressPage() {
   return (
     <PageLayout 
-      title="Sala de Imprensa" 
-      subtitle="As últimas notícias, releases e conquistas da GO.ALLTECH no mercado nacional e internacional."
+      title="AllTech na Mídia" 
+      subtitle="Acompanhe nossa presença nos principais veículos de tecnologia e negócios do país."
       image="https://picsum.photos/seed/pressnews/1200/800"
     >
-      <div className="space-y-6">
-        {[1, 2, 3].map(i => (
-          <div key={i} className="py-8 border-b border-white/5 flex justify-between items-center group cursor-pointer">
-            <div>
-              <p className="text-brand-cyan text-sm mb-1 font-bold">24 de Março, 2026</p>
-              <h3 className="text-2xl font-bold text-white group-hover:translate-x-2 transition-transform">GO.ALLTECH anuncia nova parceria estratégica de IA.</h3>
-            </div>
-            <div className="text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity">Leia mais →</div>
+      <div className="space-y-8">
+        {[
+          { media: "EXAME / TECH", title: "GO.ALLTECH expande operação com foco em IA Generativa e Google Cloud.", desc: "A consultoria anuncia nova vertical focada em orquestração de Agentes Gemini para o setor financeiro." },
+          { media: "VALOR ECONÔMICO", title: "Integração GCP e AWS: A estratégia de eficiência da GO.ALLTECH.", desc: "Como a automação via Terraform e SecOps está transformando a infraestrutura de grandes varejistas." }
+        ].map((item, i) => (
+          <div key={i} className="p-8 bg-brand-panel rounded-3xl border border-white/5 flex flex-col md:flex-row gap-8 items-start hover:border-brand-cyan/30 transition-colors">
+             <div className="text-sm font-bold text-brand-cyan uppercase tracking-tighter whitespace-nowrap">{item.media}</div>
+             <div>
+                <h3 className="text-2xl font-bold text-white mb-2 italic small-caps">{item.title}</h3>
+                <p className="text-gray-400">{item.desc}</p>
+             </div>
           </div>
         ))}
       </div>

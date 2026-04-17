@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from '@phosphor-icons/react';
+import ceoPhoto from '../assets/images/FotoCEO.png';
 
 export function Values() {
   return (
@@ -57,7 +58,7 @@ export function Values() {
             className="relative h-[400px] rounded-[2rem] overflow-hidden order-2 lg:order-1"
           >
             <img
-              src="./images/FotoCEO.png"
+              src="ceoPhoto"
               alt="CEO"
               className="w-full h-full object-cover opacity-70"
             />

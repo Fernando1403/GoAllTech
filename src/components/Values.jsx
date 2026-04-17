@@ -58,7 +58,7 @@ export function Values() {
             className="relative h-[400px] rounded-[2rem] overflow-hidden order-2 lg:order-1"
           >
             <img
-              src="ceoPhoto"
+              src={ceoPhoto}
               alt="CEO"
               className="w-full h-full object-cover opacity-70"
             />

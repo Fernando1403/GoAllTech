@@ -1,25 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { ArrowUpRight } from '@phosphor-icons/react';
 
 const cases = [
-  { img: "https://picsum.photos/seed/cybersecurity/800/600", title: "Defesa Autônoma", category: "Cyber Security", colSpan: "md:col-span-2" },
-  { img: "https://picsum.photos/seed/fintechai/800/600", title: "Análise Preditiva", category: "Fintech", colSpan: "md:col-span-1" },
-  { img: "https://picsum.photos/seed/agrotech/800/600", title: "Smart Agro IoT", category: "Indústria de Base", colSpan: "md:col-span-1" },
-  { img: "https://picsum.photos/seed/retaildata/800/600", title: "Retail Hub", category: "Data Analytics", colSpan: "md:col-span-2" }
+  { img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800", title: "Modernização de Infraestrutura Cloud", category: "Infraestrutura", colSpan: "md:col-span-2" },
+  { img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800", title: "Automação com IA", category: "Inteligência Artificial", colSpan: "md:col-span-1" },
+  { img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800", title: "Integração de Sistemas Corporativos", category: "Integração", colSpan: "md:col-span-3" }
 ];
 
 export function Cases() {
   return (
     <section id="casos-de-uso" className="py-24 relative bg-brand-dark">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl tracking-tighter font-bold text-white mb-6">
-            Casos de Uso
-          </h2>
-          <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl">
-            Projetos reais onde aplicamos nossa engenharia e inteligência artificial para destravar o valor corporativo de grandes indústrias.
-          </p>
+        <div className="flex flex-col md:flex-row gap-8 justify-between items-end mb-16">
+          <div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl tracking-tighter font-bold text-white mb-6">
+              Casos de Uso
+            </h2>
+            <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl">
+              Transformamos desafios em soluções reais. Veja exemplos práticos de como nossas soluções são aplicadas em ambientes empresariais.
+            </p>
+          </div>
+          <Link
+            to="/casos-de-uso"
+            className="hidden md:flex items-center gap-2 text-brand-cyan font-medium border-b border-transparent hover:border-brand-cyan transition-all pb-1 whitespace-nowrap"
+          >
+            Ver todos os casos <ArrowUpRight size={16} />
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -36,7 +44,7 @@ export function Cases() {
                 <img 
                   src={item.img} 
                   alt={item.title} 
-                  className="w-full h-full object-cover opacity-60 mix-blend-luminosity group-hover:scale-105 group-hover:opacity-80 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                  className="w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
                 />
               </div>
               

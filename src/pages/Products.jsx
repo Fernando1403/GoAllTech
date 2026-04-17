@@ -2,21 +2,44 @@ import React from 'react';
 import { PageLayout } from '../components/PageLayout';
 
 export function ProductsPage() {
+  const products = [
+    {
+      title: "Portais Inteligentes Corporativos",
+      description: "Plataformas digitais para centralização de informações, automação de processos e integração eficiente entre equipes."
+    },
+    {
+      title: "Soluções de Automação Empresarial",
+      description: "Ferramentas que reduzem tarefas manuais e aumentam drasticamente a produtividade através de fluxos inteligentes."
+    },
+    {
+      title: "Dashboards Inteligentes",
+      description: "Painéis de visualização em tempo real que transformam grandes volumes de dados em decisões estratégicas claras."
+    },
+    {
+      title: "Plataformas Baseadas em IA",
+      description: "Soluções que utilizam modelos inteligentes de última geração para análise, previsão e otimização contínua de processos."
+    }
+  ];
+
   return (
     <PageLayout 
-      title="Nossos Ativos" 
-      subtitle="Plataformas proprietárias desenhadas para orquestração de nuvem e inteligência artificial corporativa."
-      image="https://picsum.photos/seed/productsdev/1200/800"
+      title="Produtos" 
+      subtitle="A GO.ALLTECH oferece produtos tecnológicos desenvolvidos para resolver desafios reais de empresas modernas, projetados com foco em automação, eficiência operacional e integração total."
+      image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200"
     >
-      <div className="space-y-12">
-        <div className="flex flex-col md:flex-row gap-8 items-center bg-brand-panel p-8 rounded-[2.5rem] border border-white/5">
-           <div className="w-full md:w-1/3 h-48 bg-brand-dark rounded-2xl overflow-hidden capitalize flex items-center justify-center text-brand-cyan text-4xl font-black text-center px-4">AI Orchestrator</div>
-           <div className="flex-1">
-              <h3 className="text-2xl font-bold text-white mb-2">Google Cloud AI Hub</h3>
-              <p className="text-gray-400">Integração nativa com Gemini e VEO para processos de decisão automatizados e análise preditiva avançada.</p>
-           </div>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-400">
+        {products.map((product, index) => (
+          <div key={index} className="p-8 bg-brand-panel rounded-3xl border border-white/5 hover:border-brand-cyan/20 transition-all group">
+            <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">
+              {product.title}
+            </h3>
+            <p className="leading-relaxed">
+              {product.description}
+            </p>
+          </div>
+        ))}
       </div>
     </PageLayout>
   );
 }
+

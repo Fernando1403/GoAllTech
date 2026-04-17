@@ -8,11 +8,11 @@ export function Hero() {
     <section className="relative min-h-[100dvh] flex items-center pt-24 overflow-hidden" id="home">
       {/* Background Image/Overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/70 to-transparent z-10" />
         <img
-          src="https://picsum.photos/seed/techAI/1920/1080"
-          alt="IT Infrastructure"
-          className="w-full h-full object-cover object-right opacity-40 mix-blend-luminosity"
+          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
+          alt="IT Excellence"
+          className="w-full h-full object-cover object-right opacity-80"
         />
       </div>
 
@@ -27,15 +27,15 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-cyan/30 bg-brand-cyan/5 text-brand-cyan text-sm font-medium">
               <Cpu size={18} weight="duotone" />
-              <span>Technologies & AI Solution Providers</span>
+              <span>I.T. Services & Cloud Solutions Providers</span>
             </div>
 
             <h1 className="text-5xl md:text-7xl lg:text-[5rem] font-bold tracking-tighter leading-[1.05] text-white">
-              Excelência em <span className="text-brand-cyan">Google Cloud</span> e Estratégias Digitais.
+              Transformando tecnologia em <span className="text-brand-cyan">valor real</span> para sua empresa.
             </h1>
 
             <p className="text-lg md:text-xl text-gray-400 max-w-[50ch] leading-relaxed">
-              Consolidamos sua infraestrutura com o ecossistema Google (GCP/GWS), AWS e o poder da IA generativa com Gemini. Especialistas em DevOps e SecOps para operações críticas.
+              Especialistas em Inteligência Artificial, Cloud Computing e Engenharia de Software sob medida. Soluções confiáveis, escaláveis e alinhadas às demandas do mundo digital.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
@@ -48,10 +48,10 @@ export function Hero() {
               </Link>
 
               <Link
-                to="/casos-de-uso"
+                to="/sobre"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-white/20 text-white font-medium rounded-full hover:bg-white/5 transition-all hover:-translate-y-[2px] active:scale-[0.98]"
               >
-                Nossos Casos de Uso
+                Conheça a GO.ALLTECH
               </Link>
             </div>
           </motion.div>

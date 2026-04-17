@@ -32,7 +32,8 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 uppercase tracking-widest font-bold">Email</p>
-                  <p className="text-white font-medium">contato@goalltech.com.br</p>
+                  <p className="text-white font-medium text-sm">chafic.matuck@goalltech.com.br</p>
+                  <p className="text-white font-medium text-sm">goalltech@goalltech.com.br</p>
                 </div>
               </div>
 
@@ -42,7 +43,8 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 uppercase tracking-widest font-bold">Telefone</p>
-                  <p className="text-white font-medium">+55 (11) 3333-3333</p>
+                  <p className="text-white font-medium text-sm">Cel: +55 11 97441-2954</p>
+                  <p className="text-white font-medium text-sm">Head Office: +55 11 4492-8955</p>
                 </div>
               </div>
 
@@ -52,7 +54,8 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 uppercase tracking-widest font-bold">Sede</p>
-                  <p className="text-white font-medium">Av. Paulista, 1000 - São Paulo, SP</p>
+                  <p className="text-white font-medium text-sm">Rua Miguel Rossi, 92</p>
+                  <p className="text-white font-medium text-sm">Jundiaí - SP, CEP: 13.211-412</p>
                 </div>
               </div>
             </div>

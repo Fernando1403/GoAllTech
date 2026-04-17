@@ -37,9 +37,7 @@ export function Navigation() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-          scrolled || !isHome ? 'py-4 glass-panel' : 'py-6 bg-transparent'
-        }`}
+        className="fixed top-0 inset-x-0 z-50 py-4 bg-brand-dark/95 backdrop-blur-md border-b border-white/5 transition-all duration-300"
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
           <Link to="/" className="flex-shrink-0 group">

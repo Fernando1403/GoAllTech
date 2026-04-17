@@ -9,25 +9,28 @@ export function PageLayout({ title, subtitle, image, children }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20"
+          className={`grid grid-cols-1 ${image ? 'lg:grid-cols-2' : ''} gap-16 items-center mb-20`}
         >
-          <div>
+          <div className={image ? '' : 'max-w-4xl mx-auto text-center'}>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6">
               {title}
             </h1>
-            <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
+            <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
               {subtitle}
             </p>
           </div>
-          <div className="relative h-[400px] rounded-[2.5rem] overflow-hidden glass-panel">
-            <img 
-              src={image} 
-              alt={title} 
-              className="w-full h-full object-cover opacity-60 mix-blend-luminosity"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
-          </div>
+          {image && (
+            <div className="relative h-[400px] rounded-[2.5rem] overflow-hidden glass-panel">
+              <img 
+                src={image} 
+                alt={title} 
+                className="w-full h-full object-cover opacity-60"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
+            </div>
+          )}
         </motion.div>
+
         
         <motion.div
            initial={{ opacity: 0 }}

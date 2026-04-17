@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100dvh] flex items-center pt-24 overflow-hidden" id="home">
+    <section className="relative min-h-[100dvh] flex items-center pt-20 sm:pt-24 overflow-hidden" id="home">
       {/* Background Image/Overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/70 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-brand-dark/40 sm:to-transparent z-10" />
         <img
           src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
           alt="IT Excellence"
@@ -16,7 +16,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="max-w-[1400px] mx-auto w-full px-6 md:px-12 relative z-10 block">
+      <div className="max-w-[1400px] mx-auto w-full px-5 sm:px-6 md:px-12 relative z-10 block">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div
@@ -30,11 +30,11 @@ export function Hero() {
               <span>I.T. Services & Cloud Solutions Providers</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-[5rem] font-bold tracking-tighter leading-[1.05] text-white">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[5rem] font-bold tracking-tighter leading-[1.05] text-white">
               Transformando tecnologia em <span className="text-brand-cyan">valor real</span> para sua empresa.
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-400 max-w-[50ch] leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-[50ch] leading-relaxed">
               Especialistas em Inteligência Artificial, Cloud Computing e Engenharia de Software sob medida. Soluções confiáveis, escaláveis e alinhadas às demandas do mundo digital.
             </p>
 

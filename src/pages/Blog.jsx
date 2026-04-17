@@ -48,10 +48,10 @@ export function BlogPage() {
       <div className="space-y-16">
         <div>
           <h2 className="text-2xl font-bold text-white mb-10">Aqui publicamos conteúdos sobre:</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 sm:gap-x-8 gap-y-10 sm:gap-y-12">
             {topics.map((topic, index) => (
               <div key={index} className="group cursor-pointer flex flex-col h-full">
-                <div className="h-64 rounded-3xl overflow-hidden mb-6 bg-brand-panel border border-white/5 relative">
+                <div className="h-48 sm:h-56 lg:h-64 rounded-2xl sm:rounded-3xl overflow-hidden mb-5 sm:mb-6 bg-brand-panel border border-white/5 relative">
                   <img 
                     src={topic.image} 
                     alt={topic.name}
@@ -83,7 +83,7 @@ export function BlogPage() {
           </div>
         </div>
 
-        <div className="p-12 bg-white/5 rounded-[3rem] border border-white/5 text-center max-w-4xl mx-auto backdrop-blur-sm">
+        <div className="p-8 sm:p-12 bg-white/5 rounded-[2rem] sm:rounded-[3rem] border border-white/5 text-center max-w-4xl mx-auto backdrop-blur-sm">
           <p className="text-gray-400 text-xl leading-relaxed">
             Nosso objetivo é ajudar empresas e profissionais a compreender e aplicar tecnologia de forma estratégica.
           </p>

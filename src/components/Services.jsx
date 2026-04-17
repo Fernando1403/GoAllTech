@@ -54,14 +54,14 @@ const itemVariants = {
 
 export function Services() {
   return (
-    <section id="serviços" className="py-24 lg:py-32 relative overflow-hidden bg-brand-dark">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+    <section id="serviços" className="py-16 sm:py-24 lg:py-32 relative overflow-hidden bg-brand-dark">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-12">
         <div className="flex flex-col md:flex-row gap-8 justify-between items-end mb-16">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl tracking-tighter font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tighter font-bold text-white mb-4 sm:mb-6">
               Soluções tecnológicas completas para sua empresa.
             </h2>
-            <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed">
               Entregamos soluções projetadas para impulsionar eficiência, inovação e crescimento sustentável, com foco em Inteligência Artificial, infraestrutura corporativa e engenharia de software sob medida.
             </p>
           </div>
@@ -84,7 +84,7 @@ export function Services() {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className={`p-10 rounded-[2rem] bg-brand-panel border border-white/5 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-brand-cyan/20 transition-colors group flex flex-col justify-between min-h-[300px] ${svc.colSpan}`}
+              className={`p-6 sm:p-8 lg:p-10 rounded-[2rem] bg-brand-panel border border-white/5 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] hover:border-brand-cyan/20 transition-colors group flex flex-col justify-between min-h-[240px] sm:min-h-[300px] ${svc.colSpan}`}
             >
               <div className="p-4 bg-brand-dark rounded-2xl w-fit mb-8 shadow-inner ring-1 ring-white/5 group-hover:-translate-y-2 group-hover:scale-105 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
                 {svc.icon}

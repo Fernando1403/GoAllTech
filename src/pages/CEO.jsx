@@ -26,7 +26,7 @@ export function CEOPage() {
           className="relative z-10 text-center"
         >
           <h2 className="text-brand-cyan font-bold tracking-[0.3em] uppercase text-sm mb-4">Liderança & Visão</h2>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-white">
+          <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-white">
             CHAFIC <span className="text-brand-cyan">MATUCK</span>
           </h1>
           <div className="flex items-center justify-center gap-4 mt-8">
@@ -38,13 +38,13 @@ export function CEOPage() {
       </section>
 
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 xl:grid-cols-12 gap-12 items-start max-w-7xl mx-auto">
         
         {/* Profile Text Side */}
-        <div className="lg:col-span-12 xl:col-span-7 space-y-12 order-2 xl:order-1">
-          <motion.div {...fadeInUp} className="p-10 md:p-14 glass-panel rounded-[3.5rem] relative overflow-hidden group">
+        <div className="xl:col-span-7 space-y-10 sm:space-y-12 order-2 xl:order-1">
+          <motion.div {...fadeInUp} className="p-6 sm:p-10 md:p-14 glass-panel rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-80 h-80 bg-brand-cyan/5 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-brand-cyan/10 transition-colors duration-700" />
-            <p className="relative z-10 text-white font-medium italic text-2xl md:text-3xl leading-snug">
+            <p className="relative z-10 text-white font-medium italic text-xl sm:text-2xl md:text-3xl leading-snug">
               "Chafic Matuck é profissional sênior da área de Tecnologia da Informação, com décadas de experiência em projetos corporativos, engenharia de sistemas e soluções empresariais."
             </p>
           </motion.div>
@@ -87,7 +87,7 @@ export function CEOPage() {
         </div>
 
         {/* Executive Portrait Side */}
-        <div className="lg:col-span-12 xl:col-span-5 relative order-1 xl:order-2">
+        <div className="xl:col-span-5 relative order-1 xl:order-2">
           <div className="sticky top-24">
             <motion.div 
               initial={{ opacity: 0, x: 20 }}

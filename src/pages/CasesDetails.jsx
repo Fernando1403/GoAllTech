@@ -31,19 +31,19 @@ export function CasesDetailsPage() {
     >
       <div className="flex flex-col gap-12">
         {cases.map((item, index) => (
-          <div key={index} className="group overflow-hidden rounded-[3rem] bg-brand-panel border border-white/5 h-[400px] md:h-[500px] relative">
+          <div key={index} className="group overflow-hidden rounded-[2rem] sm:rounded-[3rem] bg-brand-panel border border-white/5 h-[300px] sm:h-[400px] md:h-[500px] relative">
             <img 
               src={item.image} 
               alt={item.title}
               className="w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" 
             />
-            <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent">
+            <div className="absolute inset-0 p-6 sm:p-8 md:p-16 flex flex-col justify-end bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent">
               <div className="relative z-10">
                 <p className="text-brand-cyan text-sm font-bold mb-4 uppercase tracking-[0.2em]">{item.tag}</p>
-                <h3 className="text-3xl md:text-5xl font-bold text-white mb-6 group-hover:text-brand-cyan transition-colors duration-500 max-w-2xl leading-tight">
+                <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 sm:mb-6 group-hover:text-brand-cyan transition-colors duration-500 max-w-2xl leading-tight">
                   {item.title}
                 </h3>
-                <p className="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg xl:text-xl text-gray-400 max-w-2xl leading-relaxed">
                   {item.description}
                 </p>
               </div>

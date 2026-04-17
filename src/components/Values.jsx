@@ -2,22 +2,21 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from '@phosphor-icons/react';
-import ceoPhoto from '../assets/images/FotoCEO.png';
 
 export function Values() {
   return (
-    <section id="sobre" className="py-24 relative bg-brand-panel border-y border-white/5">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+    <section id="sobre" className="py-16 sm:py-24 relative bg-brand-panel border-y border-white/5">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-12">
 
         {/* Valores */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center mb-16 sm:mb-24 lg:mb-32">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="flex flex-col gap-6"
           >
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter text-white">
               Nossa missão é transformar <span className="text-brand-cyan">tecnologia em valor real.</span>
             </h2>
             <ul className="space-y-6 mt-4">
@@ -38,7 +37,7 @@ export function Values() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative h-[500px] rounded-[2rem] overflow-hidden"
+            className="relative h-[300px] sm:h-[400px] lg:h-[500px] rounded-[2rem] overflow-hidden"
           >
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
@@ -50,15 +49,15 @@ export function Values() {
         </div>
 
         {/* Equipe / CEO */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center lg:flex-row-reverse" id="equipe">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center lg:flex-row-reverse" id="equipe">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative h-[400px] rounded-[2rem] overflow-hidden order-2 lg:order-1"
+            className="relative h-[280px] sm:h-[340px] lg:h-[400px] rounded-[2rem] overflow-hidden order-2 lg:order-1"
           >
             <img
-              src={ceoPhoto}
+              src="./images/FotoCEO.png"
               alt="CEO"
               className="w-full h-full object-cover opacity-70"
             />
@@ -74,7 +73,7 @@ export function Values() {
             <div className="inline-flex items-center px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-300 text-sm font-medium w-fit">
               Liderança Executiva
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter text-white">
               Chafic Matuck — <span className="text-brand-cyan">Fundador & CEO</span>
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">

@@ -21,11 +21,11 @@ export function IndustriesPage() {
       subtitle="A GO.ALLTECH atende empresas de diversos setores, adaptando soluções tecnológicas às características e necessidades específicas de cada indústria."
     >
       <div className="space-y-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {industries.map((item, index) => (
             <div 
               key={index} 
-              className="relative h-64 rounded-3xl overflow-hidden group border border-white/5 hover:border-brand-cyan/30 transition-all duration-500"
+              className="relative h-48 sm:h-56 lg:h-64 rounded-2xl sm:rounded-3xl overflow-hidden group border border-white/5 hover:border-brand-cyan/30 transition-all duration-500"
             >
               {/* Background Image */}
               <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
@@ -47,7 +47,7 @@ export function IndustriesPage() {
           ))}
         </div>
 
-        <div className="p-12 bg-white/5 rounded-[3rem] border border-white/5 text-center max-w-4xl mx-auto backdrop-blur-sm">
+        <div className="p-8 sm:p-12 bg-white/5 rounded-[2rem] sm:rounded-[3rem] border border-white/5 text-center max-w-4xl mx-auto backdrop-blur-sm">
           <p className="text-gray-400 text-xl leading-relaxed">
             Nossa abordagem é baseada em entendimento profundo do negócio, permitindo entregar soluções eficazes e sustentáveis.
           </p>

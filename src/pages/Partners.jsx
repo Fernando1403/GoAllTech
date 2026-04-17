@@ -40,9 +40,9 @@ export function PartnersPage() {
       subtitle="A GO.ALLTECH constrói suas soluções com base em alianças estratégicas com empresas líderes globais e instituições reconhecidas em tecnologia, inovação e engenharia de software. Essas parcerias permitem entregar soluções modernas e alinhadas às melhores práticas internacionais."
       image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1200"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-400 mb-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-gray-400 mb-16 sm:mb-24">
         {partners.map((partner, index) => (
-          <div key={index} className="p-8 bg-brand-panel rounded-3xl border border-white/5 hover:border-brand-cyan/20 transition-all group">
+          <div key={index} className="p-6 sm:p-8 bg-brand-panel rounded-2xl sm:rounded-3xl border border-white/5 hover:border-brand-cyan/20 transition-all group">
             <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">
               {partner.name}
             </h3>
@@ -59,7 +59,7 @@ export function PartnersPage() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="relative p-12 lg:p-16 rounded-[3rem] overflow-hidden glass-panel border border-white/10 group"
+        className="relative p-8 sm:p-12 lg:p-16 rounded-[2rem] sm:rounded-[3rem] overflow-hidden glass-panel border border-white/10 group"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-brand-cyan/10 via-brand-dark/50 to-brand-dark" />
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-cyan/5 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2" />
@@ -74,7 +74,7 @@ export function PartnersPage() {
               Featured Portal
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 tracking-tight">
               MegaPortal <span className="text-brand-cyan">NEXXTRA</span>
             </h2>
             
@@ -87,7 +87,7 @@ export function PartnersPage() {
               Trabalhe com a máxima eficiência e inteligência tecnológica.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6">
               <button className="px-8 py-4 bg-brand-cyan text-brand-dark font-bold rounded-2xl hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(34,211,238,0.3)]">
                 Acessar Portal
               </button>
@@ -103,8 +103,8 @@ export function PartnersPage() {
             <div className="w-full h-full rounded-[2.5rem] bg-brand-dark/40 border border-white/5 flex flex-col items-center justify-center p-12 text-center relative group-hover:border-brand-cyan/30 transition-all duration-500 overflow-hidden">
                {/* Visual Placeholder for NEXXTRA logo */}
                <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/5 to-transparent opacity-50" />
-               <div className="relative z-10 scale-125 lg:scale-150">
-                  <div className="text-7xl font-black text-white tracking-tighter mb-2 italic">
+               <div className="relative z-10 scale-100 sm:scale-125 lg:scale-150">
+                  <div className="text-4xl sm:text-7xl font-black text-white tracking-tighter mb-2 italic">
                     NEX<span className="text-brand-cyan">X</span>TRA
                   </div>
                   <div className="h-1 w-full bg-gradient-to-r from-brand-cyan to-transparent rounded-full" />

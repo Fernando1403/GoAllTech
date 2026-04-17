@@ -31,9 +31,9 @@ export function ServicesPage() {
       subtitle="Na GO.ALLTECH, entregamos soluções tecnológicas completas, projetadas para impulsionar eficiência, inovação e crescimento sustentável. Atuamos com foco em Inteligência Artificial, infraestrutura corporativa e engenharia de software sob medida."
       image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-400">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-gray-400">
         {services.map((service, index) => (
-          <div key={index} className="p-8 bg-brand-panel rounded-3xl border border-white/5 hover:border-brand-cyan/20 transition-colors group">
+          <div key={index} className="p-6 sm:p-8 bg-brand-panel rounded-2xl sm:rounded-3xl border border-white/5 hover:border-brand-cyan/20 transition-colors group">
             <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-cyan transition-colors">
               {service.title}
             </h3>

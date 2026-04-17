@@ -39,9 +39,9 @@ export function Navigation() {
         transition={{ type: 'spring', stiffness: 100, damping: 20 }}
         className="fixed top-0 inset-x-0 z-50 py-4 bg-brand-dark/95 backdrop-blur-md border-b border-white/5 transition-all duration-300"
       >
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
           <Link to="/" className="flex-shrink-0 group">
-            <span className="text-3xl md:text-4xl font-black tracking-tighter text-brand-cyan group-hover:text-white transition-all duration-300">
+            <span className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tighter text-brand-cyan group-hover:text-white transition-all duration-300">
               GO.ALLTECH
             </span>
           </Link>

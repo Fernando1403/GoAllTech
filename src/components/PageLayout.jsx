@@ -3,24 +3,24 @@ import { motion } from 'framer-motion';
 
 export function PageLayout({ title, subtitle, image, children }) {
   return (
-    <div className="pt-32 pb-24 min-h-screen bg-brand-dark overflow-hidden relative">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
+    <div className="pt-24 sm:pt-32 pb-16 sm:pb-24 min-h-screen bg-brand-dark overflow-hidden relative">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-12 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className={`grid grid-cols-1 ${image ? 'lg:grid-cols-2' : ''} gap-16 items-center mb-20`}
+          className={`grid grid-cols-1 ${image ? 'lg:grid-cols-2' : ''} gap-8 sm:gap-16 items-center mb-12 sm:mb-20`}
         >
           <div className={image ? '' : 'max-w-4xl mx-auto text-center'}>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter text-white mb-4 sm:mb-6">
               {title}
             </h1>
-            <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed">
               {subtitle}
             </p>
           </div>
           {image && (
-            <div className="relative h-[400px] rounded-[2.5rem] overflow-hidden glass-panel">
+            <div className="relative h-[240px] sm:h-[340px] lg:h-[400px] rounded-[2rem] overflow-hidden glass-panel">
               <img 
                 src={image} 
                 alt={title} 

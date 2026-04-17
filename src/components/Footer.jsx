@@ -17,8 +17,8 @@ const tabs = [
 
 export function Footer() {
   return (
-    <footer className="bg-brand-dark border-t border-white/5 pt-24 pb-12">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+    <footer className="bg-brand-dark border-t border-white/5 pt-14 sm:pt-24 pb-10 sm:pb-12">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 mb-12 sm:mb-16">
         
         {/* Bio Column */}
         <div className="md:col-span-4 lg:col-span-5">
@@ -85,7 +85,7 @@ export function Footer() {
 
 
 
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 text-center">
         <div className="flex flex-col gap-1">
           <p>© {new Date().getFullYear()} GO.ALLTECH. Technologies & AI Solution Providers.</p>
           <p>CHAFIC MATUCK - ME - CNPJ: 32.638.613/0001-45</p>

@@ -11,11 +11,11 @@ const cases = [
 
 export function Cases() {
   return (
-    <section id="casos-de-uso" className="py-24 relative bg-brand-dark">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+    <section id="casos-de-uso" className="py-16 sm:py-24 relative bg-brand-dark">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-12">
         <div className="flex flex-col md:flex-row gap-8 justify-between items-end mb-16">
           <div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl tracking-tighter font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tighter font-bold text-white mb-4 sm:mb-6">
               Casos de Uso
             </h2>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl">
@@ -38,7 +38,7 @@ export function Cases() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: idx * 0.1, type: "spring", stiffness: 80 }}
               key={idx}
-              className={`group relative overflow-hidden rounded-[2rem] min-h-[400px] cursor-pointer ${item.colSpan}`}
+              className={`group relative overflow-hidden rounded-[2rem] min-h-[280px] sm:min-h-[350px] md:min-h-[400px] cursor-pointer ${item.colSpan}`}
             >
               <div className="absolute inset-0 bg-brand-dark z-0">
                 <img 
@@ -56,7 +56,7 @@ export function Cases() {
                     <span className="text-brand-cyan text-sm font-semibold tracking-wide uppercase mb-2 block">
                       {item.category}
                     </span>
-                    <h3 className="text-3xl font-bold text-white tracking-tight">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white tracking-tight">
                       {item.title}
                     </h3>
                   </div>

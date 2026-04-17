@@ -35,7 +35,7 @@ export function PressPage() {
           </div>
         </div>
 
-        <div className="p-12 bg-brand-panel rounded-[3rem] border border-brand-cyan/20 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+        <div className="p-7 sm:p-12 bg-brand-panel rounded-[2rem] sm:rounded-[3rem] border border-brand-cyan/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 sm:gap-8 relative overflow-hidden">
           <div className="absolute inset-0 bg-brand-cyan/5 blur-3xl rounded-full translate-x-1/2" />
           <div className="relative z-10">
             <h2 className="text-3xl font-bold text-white mb-2">Contato com a Imprensa</h2>
@@ -43,7 +43,7 @@ export function PressPage() {
           </div>
           <a 
             href="mailto:contato@goalltech.com.br" 
-            className="relative z-10 px-8 py-4 bg-brand-cyan text-brand-dark font-bold rounded-2xl hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(34,211,238,0.2)]"
+            className="relative z-10 px-6 sm:px-8 py-3 sm:py-4 bg-brand-cyan text-brand-dark font-bold rounded-xl sm:rounded-2xl hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(34,211,238,0.2)] text-sm sm:text-base break-all sm:break-normal"
           >
             contato@goalltech.com.br
           </a>

@@ -5,9 +5,9 @@ import { ContactForm } from '../components/ContactForm';
 
 export function Contact() {
   return (
-    <section className="pt-32 pb-24 min-h-screen relative overflow-hidden bg-brand-dark">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <section className="pt-24 sm:pt-32 pb-16 sm:pb-24 min-h-screen relative overflow-hidden bg-brand-dark">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-start">
           
           {/* Header & Contact Info */}
           <motion.div
@@ -17,7 +17,7 @@ export function Contact() {
             className="flex flex-col gap-8"
           >
             <div>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter text-white mb-4 sm:mb-6">
                 Vamos transformar sua <span className="text-brand-cyan">TI?</span>
               </h1>
               <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-md">
@@ -66,7 +66,7 @@ export function Contact() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
-            className="glass-panel p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden"
+            className="glass-panel p-6 sm:p-8 md:p-12 rounded-[2rem] sm:rounded-[2.5rem] relative overflow-hidden"
           >
             <ContactForm />
           </motion.div>

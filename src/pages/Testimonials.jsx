@@ -38,17 +38,17 @@ export function TestimonialsPage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: idx * 0.1 }}
-            className="p-12 bg-brand-panel rounded-[3rem] border border-white/5 relative overflow-hidden group hover:border-brand-cyan/20 transition-all duration-500"
+            className="p-7 sm:p-10 lg:p-12 bg-brand-panel rounded-[2rem] sm:rounded-[3rem] border border-white/5 relative overflow-hidden group hover:border-brand-cyan/20 transition-all duration-500"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-cyan/5 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-brand-cyan/10 transition-colors" />
-            <span className="text-8xl text-brand-cyan/10 absolute top-8 left-8 font-serif">"</span>
+            <span className="text-6xl sm:text-8xl text-brand-cyan/10 absolute top-6 left-6 sm:top-8 sm:left-8 font-serif">"</span>
             
             <div className="relative z-10">
               <div className="inline-block px-4 py-1 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan text-xs font-bold uppercase tracking-widest mb-8">
                 {t.sector}
               </div>
               
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed italic mb-10 font-light">
+              <p className="text-base sm:text-xl md:text-2xl text-gray-300 leading-relaxed italic mb-8 sm:mb-10 font-light">
                 {t.quote}
               </p>
               

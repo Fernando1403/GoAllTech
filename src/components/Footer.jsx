@@ -22,7 +22,11 @@ export function Footer() {
         
         {/* Bio Column */}
         <div className="md:col-span-4 lg:col-span-5">
-          <Link to="/" className="text-3xl font-bold tracking-tighter text-brand-cyan mb-6 block hover:text-white transition-colors">
+          <Link 
+            to="/" 
+            translate="no"
+            className="text-3xl font-bold tracking-tighter text-brand-cyan mb-6 block hover:text-white transition-colors"
+          >
             GO.ALLTECH
           </Link>
           <h3 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -87,7 +91,7 @@ export function Footer() {
 
       <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 text-center">
         <div className="flex flex-col gap-1">
-          <p>© {new Date().getFullYear()} GO.ALLTECH. Technologies & AI Solution Providers.</p>
+          <p>© {new Date().getFullYear()} <span translate="no">GO.ALLTECH</span>. Technologies & AI Solution Providers.</p>
           <p>CHAFIC MATUCK - ME - CNPJ: 32.638.613/0001-45</p>
         </div>
         <div className="flex gap-4 mt-4 md:mt-0">

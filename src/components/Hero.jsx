@@ -49,6 +49,7 @@ export function Hero() {
 
               <Link
                 to="/sobre"
+                translate="no"
                 className="flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-white/20 text-white font-medium rounded-full hover:bg-white/5 transition-all hover:-translate-y-[2px] active:scale-[0.98]"
               >
                 Conheça a GO.ALLTECH

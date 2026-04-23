@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from '@phosphor-icons/react';
 import ceoPhoto from '../assets/images/FotoCEO.png';
 
+
 export function Values() {
   return (
     <section id="sobre" className="py-16 sm:py-24 relative bg-brand-panel border-y border-white/5">

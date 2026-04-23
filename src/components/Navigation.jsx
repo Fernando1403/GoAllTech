@@ -41,7 +41,10 @@ export function Navigation() {
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
           <Link to="/" className="flex-shrink-0 group">
-            <span className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tighter text-brand-cyan group-hover:text-white transition-all duration-300">
+            <span 
+              translate="no"
+              className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tighter text-brand-cyan group-hover:text-white transition-all duration-300"
+            >
               GO.ALLTECH
             </span>
           </Link>

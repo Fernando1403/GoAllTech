@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageLayout } from '../components/PageLayout';
 import { motion } from 'framer-motion';
+import NexxtraLogo from '../../images/Nexxtra.png';
 
 export function PartnersPage() {
   const partners = [
@@ -99,19 +100,13 @@ export function PartnersPage() {
             </div>
           </div>
 
-          <div className="relative aspect-video lg:aspect-square flex items-center justify-center p-8">
-            <div className="w-full h-full rounded-[2.5rem] bg-brand-dark/40 border border-white/5 flex flex-col items-center justify-center p-12 text-center relative group-hover:border-brand-cyan/30 transition-all duration-500 overflow-hidden">
-               {/* Visual Placeholder for NEXXTRA logo */}
-               <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/5 to-transparent opacity-50" />
-               <div className="relative z-10 scale-100 sm:scale-125 lg:scale-150">
-                  <div className="text-4xl sm:text-7xl font-black text-white tracking-tighter mb-2 italic">
-                    NEX<span className="text-brand-cyan">X</span>TRA
-                  </div>
-                  <div className="h-1 w-full bg-gradient-to-r from-brand-cyan to-transparent rounded-full" />
-               </div>
-               <p className="absolute bottom-12 text-sm text-gray-500 uppercase tracking-widest font-medium group-hover:text-brand-cyan/60 transition-colors">
-                 MegaPortal de Serviços
-               </p>
+          <div className="relative aspect-video lg:aspect-square flex items-center justify-center p-6 sm:p-8">
+            <div className="w-full h-full rounded-[2.5rem] bg-white shadow-2xl flex flex-col items-center justify-center p-4 sm:p-8 text-center relative group-hover:scale-[1.02] group-hover:shadow-brand-cyan/20 transition-all duration-500 overflow-hidden">
+               <img 
+                 src={NexxtraLogo} 
+                 alt="Logo Nexxtra" 
+                 className="relative z-10 w-full h-full object-contain scale-110 sm:scale-125 transition-transform duration-500" 
+               />
             </div>
           </div>
         </div>
